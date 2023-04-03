@@ -1,0 +1,36 @@
+.consultation__container {
+  background-color: var(--bluedark);
+  height: 250px;
+  margin-top: 25rem;
+  position: relative;
+}
+
+.consultation__pic {
+  position: absolute;
+  height: 500px;
+  top: -15.75rem;
+  margin-left: 10rem;
+}
+
+.consultation__text {
+  text-align: center;
+  margin-left: 10rem;
+  width: 60%;
+  margin-left: 20rem;
+}
+
+.consultation__heading {
+  font-size: 2.2rem;
+  font-weight: 300;
+  padding-top: 30px;
+  margin-left: 19.7rem;
+  color: var(--white);
+}
+
+.consultation__text {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: -20px;
+  text-align: start;
+  color: rgb(187, 182, 182);
+}

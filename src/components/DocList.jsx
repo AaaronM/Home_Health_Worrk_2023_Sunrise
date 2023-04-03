@@ -19,7 +19,7 @@ function DocList() {
         options={{
           rewind: true,
           perPage: 3,
-          //   width: 1300,
+          width: 1200,
           rewindByDrag: true,
           gap: "1rem",
         }}

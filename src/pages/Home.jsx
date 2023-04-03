@@ -14,6 +14,10 @@ import DocList from "../components/DocList";
 
 // ______________DOCLIST ________________
 
+import Consultation from "../components/Consultation";
+
+// ______________ Consultation________________
+
 const Home = () => {
   return (
     <div>
@@ -41,6 +45,9 @@ const Home = () => {
       {/* // ______________SERVICES ________________ */}
       <DocList />
       {/* // ______________DOCLIST ________________ */}
+
+      <Consultation />
+      {/* // ______________ Consultation________________ */}
     </div>
   );
 };
