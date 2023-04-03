@@ -1,0 +1,84 @@
+.home__container {
+  display: flex;
+  padding: 10rem;
+  justify-content: space-between;
+}
+
+.home__heading__top__container {
+  display: flex;
+  position: relative;
+}
+
+.home__heading__top__icon {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: rgb(240, 154, 144);
+  align-self: center;
+}
+.home__heading__top {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+.home__heading {
+  font-weight: 300;
+  font-size: 3rem;
+  width: 70%;
+}
+
+.home__heading__bottom {
+  color: var(--gray);
+  width: 60%;
+}
+
+/* ____________________________IMG__HOME__PAGE_____________________________ */
+.img__container {
+  position: relative;
+}
+
+.home__img {
+  height: 550px;
+  margin-right: 12rem;
+  position: relative;
+  z-index: 10000;
+  border-radius: 50%;
+}
+
+.home__img__bg {
+  height: 500px;
+  width: 500px;
+  background-color: var(--bluedark);
+  position: absolute;
+  top: 4rem;
+  left: 0.9rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.home__img__bg__2 {
+  height: 300px;
+  width: 400px;
+  background-color: var(--yellow);
+  position: absolute;
+  top: 15.7rem;
+  left: 3rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.home__img__bg__glass {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+  position: relative;
+}
+
+/* ____________________________IMG__HOME__PAGE_____________________________ */

@@ -1,0 +1,28 @@
+.navber__container,
+.navber__container:visited,
+.navber__container:active {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style-type: none;
+  padding: 2rem;
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--bluedark);
+  text-transform: uppercase;
+}
+
+.navber__items__contaner {
+  display: flex;
+  gap: 4rem;
+}
+
+.navber__items,
+.navber__items:visited,
+.navber__items:active {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+  font-weight: 400;
+}
