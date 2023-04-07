@@ -81,4 +81,38 @@
   position: relative;
 }
 
+/* ___________________________BACKGROUDN IMG______________ */
+
+.firstidkit {
+  position: absolute;
+  top: 20rem;
+}
+
+.pharmacy_1 {
+  position: absolute;
+  transform: rotate(35deg);
+  top: 128rem;
+  left: 25rem;
+  height: 11rem;
+  width: 11rem;
+}
+
+.stethoscope_1 {
+  position: absolute;
+  top: 98rem;
+  left: 32rem;
+  height: 71rem;
+  width: 71rem;
+  right: 25rem;
+}
+
+.sc {
+  position: absolute;
+  opacity: 80%;
+  transform: rotate(-15deg);
+  top: 138rem;
+  left: 6rem;
+}
+
+/* ___________________________BACKGROUDN IMG______________ */
 /* ____________________________IMG__HOME__PAGE_____________________________ */
