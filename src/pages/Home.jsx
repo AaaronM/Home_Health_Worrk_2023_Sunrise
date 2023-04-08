@@ -14,10 +14,22 @@ import firstidkit from "../IMG/firstidkit.png";
 import pharmacy_1 from "../IMG/pharmacy_1.png";
 import stethoscope_1 from "../IMG/stethoscope_1.png";
 import sc from "../IMG/sc.png";
+import circular from "../IMG/circular.png";
+
+import DNA from "../IMG/DNA.png";
+import Bottle from "../IMG/Bottle.png";
 
 // ___________IMG________________
 
-import { BsFillHeartPulseFill, BsFileMedical } from "react-icons/bs";
+import {
+  BsFillHeartPulseFill,
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+} from "react-icons/bs";
+
+import { FiMail } from "react-icons/fi";
+import { RiMentalHealthLine, RiHomeHeartFill } from "react-icons/ri";
 // ______________REACT__ICONS________________
 
 import ServicesProvided from "../components/ServicesProvided";
@@ -54,16 +66,34 @@ const Home = () => {
           {/* <img className="" src={Stetoscope} alt="Stetoscope" /> */}
         </div>
       </div>
-      <img className="firstidkit" src={firstidkit} alt="firstidkit" />
+      <div className="servicesProvided__container">
+        <img className="firstidkit" src={firstidkit} alt="firstidkit" />
+        <img className="circular" src={circular} alt="circular" />
+      </div>
       <ServicesProvided />
+
       {/* // ______________SERVICES ________________ */}
       <DocList />
-      <img className="pharmacy_1" src={pharmacy_1} alt="pharmacy_1" />
+
       {/* // ______________DOCLIST ________________ */}
 
-      <Consultation />
-      <img className="stethoscope_1" src={stethoscope_1} alt="stethoscope_1" />
-      <img className="sc" src={sc} alt="sc" />
+      <div className="consultation__container__bg">
+        <Consultation />
+        <img
+          className="stethoscope_1"
+          src={stethoscope_1}
+          alt="stethoscope_1"
+        />
+        <img className="sc" src={sc} alt="sc" />
+        <img className="Bottle" src={Bottle} alt="Bottle" />
+        <img className="DNA" src={DNA} alt="DNA" />
+        <img className="pharmacy_1" src={pharmacy_1} alt="pharmacy_1" />
+
+        <BsFacebook className="icon__react1" />
+        <BsInstagram className="icon__react2" />
+        <BsLinkedin className="icon__react3" />
+        <FiMail className="icon__react4" />
+      </div>
 
       {/* // ______________ Consultation________________ */}
     </div>

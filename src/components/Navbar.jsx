@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 
 import "../CSS/Navbar.css";
 // ____________CSS____________
+
+import Group from "../IMG/Group.png";
+
+// ____________IMG____________
+
 const Navbar = () => {
   return (
     <div className="navber__container">
       <li>
         <Link className="navber__items" to="/">
-          Home
+          <img src={Group} alt="" className="group" />
         </Link>
       </li>
       <div className="navber__items__contaner">

@@ -26,3 +26,11 @@
   color: var(--white);
   font-weight: 400;
 }
+
+.group {
+  background-color: white;
+  border-radius: 50%;
+  object-fit: contain;
+  height: 2rem;
+  width: 2rem;
+}
