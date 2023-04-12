@@ -39,6 +39,7 @@ import DocList from "../components/DocList";
 // ______________DOCLIST ________________
 
 import Consultation from "../components/Consultation";
+import ElderyPage from "../components/ElderyPage";
 
 // ______________ Consultation________________
 
@@ -96,6 +97,8 @@ const Home = () => {
       </div>
 
       {/* // ______________ Consultation________________ */}
+
+      <ElderyPage />
     </div>
   );
 };

@@ -10,6 +10,7 @@
   list-style: none;
   background-color: var(--bluedark);
   text-transform: uppercase;
+  height: 20px;
 }
 
 .navber__items__contaner {

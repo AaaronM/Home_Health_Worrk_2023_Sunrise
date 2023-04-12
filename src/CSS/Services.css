@@ -1,0 +1,85 @@
+.top_pic_dark_container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../IMG/eldery.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 350px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.top_pic_dark_container__h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+  padding: 125px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.1rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  align-items: center;
+}
+
+.card__service {
+  background-color: rgb(232, 230, 230);
+  border-radius: 20px;
+  width: 350px;
+  margin: 2rem;
+  padding-bottom: 1rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img__box {
+  border-radius: 25px;
+}
+
+.card__img {
+  /* transform: scale(1.5); */
+
+  transition: all 600ms;
+}
+
+.card__img:hover {
+  transform: scale(1.1);
+}
+
+.card__text {
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding: 0 1rem;
+}
+
+.card__h3 {
+}
+
+.card__p {
+}
+
+.card__btn {
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 15px;
+  transition: all 500ms;
+}
+
+.card__btn:hover {
+  background-color: var(--bluedark);
+}
