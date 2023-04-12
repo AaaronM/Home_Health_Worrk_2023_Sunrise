@@ -58,17 +58,20 @@ const cardData = [
 ];
 
 const Services = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openedCard, setOpenedCard] = useState('');
 
-  const handleClickOpen = () => {
-    setIsOpen(true);
+  const handleClickOpen = (id) => {
+    setOpenedCard(id)
   };
 
   // let toggleClick = isOpen ? "active" : null;
 
-  const handleClickClose = () => {
-    setIsOpen(false);
+  const handleClickClose = (id) => {
+    if (openedCard !== '') {
+      setOpenedCard('');
+    }
   };
+
   return (
     <div className="container__services__section">
       <div className="top_pic_dark_container">
@@ -100,16 +103,16 @@ const Services = () => {
                   <p className="card__p">{cardItem.content}</p>
                   <button
                     // onClick={(cardItem) => setIsOpen(true)}
-                    onClick={handleClickOpen}
+                    onClick={() => handleClickOpen(cardItem.id)}
                     className="card__btn"
                   >
                     Read More
                   </button>
 
-                  {isOpen && (
+                  {openedCard === cardItem.id && (
                     <div className="popup__container">
                       <div>This is the content of the pop-up.</div>
-                      <button onClick={handleClickClose}>Close Pop-up</button>
+                      <button onClick={() => handleClickClose(cardItem.id)}>Close Pop-up</button>
                     </div>
                   )}
                 </div>
