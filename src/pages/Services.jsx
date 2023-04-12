@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../CSS/Services.css";
 // ___________CSS_____________
@@ -6,6 +6,8 @@ import "../CSS/Services.css";
 import eldery from "../IMG/eldery.jpg";
 import elldery from "../IMG/05.png";
 // ___________IMG___________
+
+import Popup from "reactjs-popup";
 
 const cardData = [
   {
@@ -56,8 +58,19 @@ const cardData = [
 ];
 
 const Services = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setIsOpen(true);
+  };
+
+  // let toggleClick = isOpen ? "active" : null;
+
+  const handleClickClose = () => {
+    setIsOpen(false);
+  };
   return (
-    <div>
+    <div className="container__services__section">
       <div className="top_pic_dark_container">
         <h2 className="top_pic_dark_container__h2">
           Services that we provide{" "}
@@ -79,13 +92,26 @@ const Services = () => {
                       backgroundImage: `${cardItem.image}`,
                     }}
 
-                    // image:                           "../IMG/s1.jpg",
+                    // image:"../IMG/s1.jpg",
                   ></div>
                 </div>
                 <div className="card__text">
                   <h3 className="card__h3">{cardItem.title}</h3>
                   <p className="card__p">{cardItem.content}</p>
-                  <button className="card__btn">Read More</button>
+                  <button
+                    // onClick={(cardItem) => setIsOpen(true)}
+                    onClick={handleClickOpen}
+                    className="card__btn"
+                  >
+                    Read More
+                  </button>
+
+                  {isOpen && (
+                    <div className="popup__container">
+                      <div>This is the content of the pop-up.</div>
+                      <button onClick={handleClickClose}>Close Pop-up</button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

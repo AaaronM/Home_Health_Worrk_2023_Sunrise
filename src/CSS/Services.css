@@ -1,3 +1,7 @@
+.container__services__section {
+  background-color: rgb(232, 230, 230);
+}
+
 .top_pic_dark_container {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../IMG/eldery.jpg);
@@ -31,7 +35,7 @@
 }
 
 .card__service {
-  background-color: rgb(232, 230, 230);
+  background-color: rgb(244, 242, 242);
   border-radius: 20px;
   width: 350px;
   margin: 2rem;
@@ -63,9 +67,11 @@
 }
 
 .card__h3 {
+  color: rgb(65, 63, 63);
 }
 
 .card__p {
+  color: rgb(80, 78, 78);
 }
 
 .card__btn {
@@ -82,4 +88,8 @@
 
 .card__btn:hover {
   background-color: var(--bluedark);
+}
+
+.popup__container {
+  background-color: red;
 }
